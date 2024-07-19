@@ -6,7 +6,7 @@ metadata:
     app: demo
 spec:
   kafka:
-    version: 2.7.0
+    version: 3.7.0
     config:
       # default replication factors for automatically created topics
       default.replication.factor: 1
