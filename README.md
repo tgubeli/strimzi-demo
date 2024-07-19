@@ -44,14 +44,14 @@ The Strimzi Operator will be installed in the ```openshift-operators``` namespac
 from any namespaces in the cluster.
 
 ```shell script
-❯ oc get pod -n openshift-operators
+oc get pod -n openshift-operators
 NAME                                                READY   STATUS    RESTARTS   AGE
-strimzi-cluster-operator-v0.23.0-5f6d486bf7-jqd5v   1/1     Running   0          26h
+amq-streams-cluster-operator-v2.7.0-2-5f9cbf6bf8-bbrn8   1/1     Running   0          2m4s
 ```
 
 ### Deploy Prometheus and Grafana Operators
 
-Strimzi supports Prometheus metrics using Prometheus JMX exporter to convert the JMX metrics supported
+Strimzi (streams for Apache Kafka) supports Prometheus metrics using Prometheus JMX exporter to convert the JMX metrics supported
 by Apache Kafka and Apache Zookeeper to Prometheus metrics. This feature helps us to monitor the cluster
 easily using Prometheus to store the metrics and Grafana Dashboards to expose them.
 
